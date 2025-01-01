@@ -31,5 +31,5 @@
     "utils",
     "types",
     "modules"
-  ]
+, "vite-env.d.ts"  ]
 }
