@@ -7,31 +7,30 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:lib": "tsc --project ./abstrcat-lib/tsconfig-build.json && vite build",
     "preview": "vite preview",
-    "prepare": "copyfiles -f ./lib/css/* ./dist/css && rimraf ./dist/css/output.css",
-    "build:css": "npx tailwindcss -i ./lib/css/main.css -o ./public/css/output.css --watch"
+    "prepare": "copyfiles -f ./lib/css/* ./dist/css && rimraf ./dist/css/output.css"
   },
-  "types": "dist/index.d.ts",
+  "types": "abstrcat-dist/index.d.ts",
   "files": [
     "index.js",
     "index.umd.cjs",
-    "dist",
-    "css"
+    "abstrcat-dist"
   ],
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.ts",
-        "node": "./index.umd.cjs",
-        "default": "./dist/index.umd.cjs"
+        "types": "./abstrcat-dist/index.d.ts",
+        "node": "./abstrcat-dist/index.umd.cjs",
+        "default": "./abstrcat-dist/index.umd.cjs"
       },
       "require": {
-        "types": "./dist/index.d.ts",
-        "node": "./index.umd.cjs",
-        "default": "./index.js"
+        "types": "./abstrcat-dist/index.d.ts",
+        "node": "./abstrcat-dist/index.umd.cjs",
+        "default": "./abstrcat-dist/index.umd.cjs"
       }
     },
-    "./dist/*": "./dist/*",
+    "./dist/*": "./abstrcat-dist/*",
     "./package.json": "./package.json"
   },
   "repository": {

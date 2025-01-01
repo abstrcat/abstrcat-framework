@@ -1,4 +1,4 @@
-import Logo from '/logo/abstrcat-black.svg';
+import Logo from '@assets/img/abstrcat-black.svg';
 
 export const appHtml = `
   <div class="flex flex-col items-center justify-center h-screen bg-gray-100">

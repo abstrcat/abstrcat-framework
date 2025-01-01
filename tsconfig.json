@@ -20,5 +20,16 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["pages", "lib", "main.ts"]
+  "include": [
+    "abstrcat-lib",
+    "main.ts",
+    "layouts",
+    "pages",
+    "components",
+    "constants",
+    "stores",
+    "utils",
+    "types",
+    "modules"
+  ]
 }
