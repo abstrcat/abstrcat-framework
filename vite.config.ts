@@ -10,7 +10,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
     },
     resolve: {
       alias: {
-        '@': resolve(__dirname, 'src')
+        '~': resolve(__dirname)
       }
     },
     // only for framework lib
