@@ -3,11 +3,11 @@ export default {
   content: [
     './main.ts',
     './index.html',
-    './layouts/**/*.{html,js,jsx,ts,tsx}',
-    './pages/**/*.{html,js,jsx,ts,tsx}',
-    './components/**/*.{html,js,jsx,ts,tsx}',
-    './utils/**/*.{html,js,jsx,ts,tsx}',
-    './modules/**/*.{html,js,jsx,ts,tsx}'
+    './layouts/**/*.{html,js,jsx,ts,tsx,cat}',
+    './pages/**/*.{html,js,jsx,ts,tsx,cat}',
+    './components/**/*.{html,js,jsx,ts,tsx,cat}',
+    './utils/**/*.{html,js,jsx,ts,tsx,cat}',
+    './modules/**/*.{html,js,jsx,ts,tsx,cat}'
   ],
   theme: {
     extend: {}

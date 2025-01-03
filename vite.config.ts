@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
+import { compiler } from './abstrcat-lib';
 
 export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
   return {
@@ -19,7 +20,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
       }
     },
     // only for framework lib
-    plugins: [dts({ include: ['abstrcat-lib'] })],
+    plugins: [compiler.compilerVitePlugin(), dts({ include: ['abstrcat-lib'] })],
     build: {
       copyPublicDir: false,
       outDir: 'abstrcat-dist',

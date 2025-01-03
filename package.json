@@ -60,7 +60,8 @@
     "vite-plugin-dts": "^4.4.0"
   },
   "peerDependencies": {
-    "typescript": "*"
+    "typescript": "*",
+    "vite": "^6.0.5"
   },
   "peerDependenciesMeta": {
     "typescript": {
