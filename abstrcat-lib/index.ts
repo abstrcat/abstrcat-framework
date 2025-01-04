@@ -1,31 +1,32 @@
-export * as compiler from './compiler';
-export * as imports from './imports';
-export * as reactivity from './reactivity';
-export * as template from './template';
-export * as router from './router';
-export * as directives from './directives';
-export * as stores from './stores';
-export * as middleware from './middlewares';
+import * as Config from './config';
+
+// export * as Imports from './imports';
+// export * as Reactivity from './reactivity';
+// export * as Template from './template';
+// export * as Router from './router';
+// export * as Directives from './directives';
+// export * as Stores from './stores';
+// export * as Middleware from './middlewares';
 
 class AbstrCat {
   constructor(
-    private readonly compiler: any,
-    private readonly imports: any,
-    private readonly reactivity: any,
-    private readonly template: any,
-    private readonly router: any,
-    private readonly directives: any,
-    private readonly stores: any,
-    private readonly middleware: any
+    private readonly Config: any
+    // private readonly Imports: any = Imports,
+    // private readonly Reactivity: any = Reactivity,
+    // private readonly Template: any = Template,
+    // private readonly Router: any = Router,
+    // private readonly Directives: any = Directives,
+    // private readonly Stores: any = Stores,
+    // private readonly Middleware: any = Middleware
   ) {
-    this.compiler = compiler;
-    this.imports = imports;
-    this.reactivity = reactivity;
-    this.template = template;
-    this.router = router;
-    this.directives = directives;
-    this.stores = stores;
-    this.middleware = middleware;
+    this.Config = Config;
+    // this.Imports = Imports;
+    // this.Reactivity = Reactivity;
+    // this.Template = Template;
+    // this.Router = Router;
+    // this.Directives = Directives;
+    // this.Stores = Stores;
+    // this.Middleware = Middleware;
   }
 
   start() {}
@@ -34,7 +35,7 @@ class AbstrCat {
 let started = false;
 
 export function createApp() {
-  const framework = new AbstrCat();
+  const framework = new AbstrCat(Config.getConfig());
 
   if (started) {
     console.log('Abstrcat framework is already initialised');
@@ -42,4 +43,5 @@ export function createApp() {
   }
 
   framework.start();
+  console.log(framework);
 }

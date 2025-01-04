@@ -1,7 +1,0 @@
-<script>
-export const message = 'Hello, World!';
-</script>
-
-<template>
-<div class="text-blue-500 font-bold">${message}</div>
-</template>

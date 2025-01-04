@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "build:lib": "tsc --project ./abstrcat-lib/tsconfig-build.json && vite build",
     "preview": "vite preview",
-    "prepare": "copyfiles -f ./lib/css/* ./dist/css && rimraf ./dist/css/output.css"
+    "prepare": ""
   },
   "types": "abstrcat-dist/index.d.ts",
   "files": [

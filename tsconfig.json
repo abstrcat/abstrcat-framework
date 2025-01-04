@@ -22,7 +22,7 @@
   },
   "include": [
     "abstrcat-lib",
-    "main.ts",
+    "main.cat.ts",
     "layouts",
     "pages",
     "components",
@@ -30,6 +30,7 @@
     "stores",
     "utils",
     "types",
-    "modules"
-, "vite-env.d.ts"  ]
+    "modules",
+    "vite-env.d.ts"
+  ]
 }
